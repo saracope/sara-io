@@ -1,0 +1,16 @@
+---READ ME---
+
+Thank you for buying this theme! 
+
+To edit your website i recommend download the "best" editor http://www.sublimetext.com/.
+
+1. Start with edit file INDEX.html and follow the comments between <!—…—>. Color theme is set on line 10.
+2. Continue edit file SCRIPT.js and change your skills level. Follow the comments start’s //. 
+3. The last step is edit file SEND_FORM_EMAIL.php.
+*4. If you want change home screen images, replace file home-screen.jpg in folder “IMG”.
+That's it :) 
+
+In a case of any questions don't hesitate to send me an email. I look forward to receive the link of your new website. 
+
+Vojtěch Šebo
+vxs@klikni.cz
