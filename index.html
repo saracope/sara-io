@@ -234,19 +234,26 @@
                 <p>I am always open to new projects, collaborations, and discussions. If you would like to get ahold of me, use the form below. I look forward to hearing from you!</p>
                 </div>
                 <div id='contact-form'>   
-                <form id="contactform" method="post" name="contactform" action="">
+            
+                <form id="contactform" method="post" name="contactform" action="http://formspree.io/steph.green44@gmail.com">
                 <p>
                 <input class='input' type='text' name='name' class='input' placeholder='Your name'>
                 </p>
                 <p>
-                <input class='input' type='text' name='email' class='input' placeholder='Your e-mail'>
+                <input class='input' type='text' name='_replyto' class='input' placeholder='Your e-mail'>
                 </p>
                 <p>
-                <textarea name="message" cols="88" rows="6" class="textarea" placeholder='Your message'></textarea>
+                <textarea name="body" cols="88" rows="6" class="textarea" placeholder='Your message'></textarea>
                 </p>
                 <p id='p-submit'>
                 <input id="submit"  type="submit" name="submit" value="Send your message" class="button">
                 </p>
+            -->
+                <form action="http://formspree.io/steph.green44@gmail.com">
+                   <input type="email" name="_replyto">
+                   <textarea name="body"></textarea>
+                   <input type="submit" value="Send">
+                </form>
                 <div id="success"></div>
                 </form>  
                 </div>
