@@ -133,13 +133,15 @@ $(document).scroll(function(){
 
     if(docScroll >= boxCntOfset ) {
 
-      $("#line-1").css('width','59%');// EDIT %  PROGRAMMING SKILL//
-      $("#line-2").css('width','52%');// EDIT %  WordPress SKILL//
-      $("#line-3").css('width','82%');// EDIT %  Graphic Design SKILL//
+      $("#line-1").css('width','82%');// EDIT %  PROGRAMMING SKILL//
+      $("#line-2").css('width','48%');// EDIT %  WordPress SKILL//
+      $("#line-3").css('width','62%');// EDIT %  Graphic Design SKILL//
+      $("#line-4").css('width','34%');// EDIT %  Graphic Design SKILL//
     } else {
       $("#line-1").css('width','0px');
       $("#line-2").css('width','0px');
       $("#line-3").css('width','0px');
+      $("#line-4").css('width','0px');
 
     }
 
