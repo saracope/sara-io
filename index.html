@@ -1,247 +1,94 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="Personal profile page - ZikZak" />
-  <meta name="keywords" content="profile, theme, css, html, jquery, transition, transform" />
-  <meta name="robots" content="noindex, follow" />
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
   <title>Sara Cope</title>
-  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-  <link rel='stylesheet' type='text/css' href='magnific-popup/magnific-popup.css'/>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/common.css" />
-  <link rel="stylesheet" type="text/css" href="css/animate.css" />
-  <link rel='stylesheet' type='text/css' href='css/green.css'/>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  <script type='text/javascript' src="script.js"></script>
-  <script src="https://use.fontawesome.com/bd57ee955b.js"></script>
-  <script src="js/modernizr.custom.js"></script>
-  <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
-  <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-  <script type='text/javascript' src='magnific-popup/jquery.magnific-popup.min.js'></script>
-  <script src="magnific-popup/jquery.magnific-popup.js"></script>
-  <script src="js/jquery.backstretch.min.js"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-  <script type="text/javascript">
-            google.maps.event.addDomListener(window, 'load', init);
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-            function init() {
-                var mapOptions = {
-                    zoom: 11,
-                    center: new google.maps.LatLng(31.867489,-81.609850),
-                    scrollwheel: false,
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Muli:200,900"'>
 
-                    styles: [{stylers:[{hue:'#2c3e50'},{saturation:250}]},{featureType:'road',elementType:'geometry',stylers:[{lightness:50},{visibility:'simplified'}]},{featureType:'road',elementType:'labels',stylers:[{visibility:'off'}]}]
-                };
+  <link rel="stylesheet" href="css/style.css">
 
-                var mapElement = document.getElementById('map');
+  
+</head>
 
-                var map = new google.maps.Map(mapElement, mapOptions);
-
-                 var marker = new google.maps.Marker({
-                            position: map.getCenter(),
-                            map: map,
-                            title: 'Click to zoom'
-                            });
-            }
-  </script>
-
-  </head>
 <body>
-  <div id="preloader">
-      <div id="status">&nbsp;</div>
+  <section class="galaxy-wrapper">
+  <canvas id="galaxy" width="100%" height="100%"></canvas>
+
+  <section class="main">
+    <h1>Sara Cope</h1>
+    <h2>Code Curious<h2>
+  <div class="social--list">
+    <a href="https://twitter.com/sarassassin">
+       <svg class="icon" viewBox="0 0 216 216">
+        <use xlink:href="#twitter"></use>
+      </svg>
+    </a>
+    <a href="https://codepen.io/saracope/">
+      <svg class="icon" viewBox="0 0 216 216">
+        <use xlink:href="#codepen"></use>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/saracope/">
+      <svg class="icon" viewBox="0 0 216 216">
+        <use xlink:href="#linkedin"></use>
+      </svg>
+    </a>
+    <a href="https://github.com/saracope">
+      <svg class="icon" viewBox="0 0 216 216">
+        <use xlink:href="#github"></use>
+      </svg>
+    </a>
   </div>
-  <div id="navigation">
-    <div class="navigation-wrapper">
-    <span id="navigation-name">Sara Cope</span>
-    <span id="item_1">ABOUT</span>
-    <span id="item_2">WORK</span>
-    <span id="item_3">PROJECTS</span>
-    <span id="item_4">CONTACT</span>
-    </div>
-  </div>
-    <div id="form1" runat="server">
-    <div id="header-headlines">
-        <span>Sara Cope</span>
-        <p>Frontend Designer</p>
-    </div>
-        <div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
-        <a href="https://twitter.com/sarassassin" class="hi-icon hi-icon-earth"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/saracope" class="hi-icon hi-icon-earth"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/saracope" class="hi-icon hi-icon-earth"><i class="fa fa-github"></i></a>
-        </div>
-    <div class="arrow">
-    <img width="20" height="20" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyDQoJbDE4OS45OTktMTkwYzIwLjE3OC0yMC4xNzgsNTMuMTY0LTE5LjkxMyw3My42NzIsMC41OTVsMCwwYzIwLjUwOCwyMC41MDksMjAuNzcyLDUzLjQ5MiwwLjU5NSw3My42NzFMMjkzLjc1MSw0NTUuODY4eiIvPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIyMC4yNDksNDU1Ljg2OGMyMC4xOCwyMC4xNzksNTMuMTY0LDE5LjkxMyw3My42NzItMC41OTVsMCwwYzIwLjUwOS0yMC41MDgsMjAuNzc0LTUzLjQ5MywwLjU5Ni03My42NzINCglsLTE5MC0xOTBjLTIwLjE3OC0yMC4xNzgtNTMuMTY0LTE5LjkxMy03My42NzEsMC41OTVsMCwwYy0yMC41MDgsMjAuNTA5LTIwLjc3Miw1My40OTItMC41OTUsNzMuNjcxTDIyMC4yNDksNDU1Ljg2OHoiLz4NCjwvc3ZnPg0K" />
-    </div>
-    <div id="header">
-        <div class="backstretch" id='home-screen'>
-        <div id='overlay-black'></div>
-        </div>
-    </div>
-    <div id="main">
-        <div id="content">
-          <div id="about">
-            <div class="headlines" id="headlines-about">ABOUT
-              <img id="my_photo" src="img/profile-photo.png">
-            </div>
-            <!--ABOUT YOU-->
-            <div id="about-me-box">Sara Cope is a senior developer on the GSA Digital Service team.  She spends her free time raising two nerdy boys, volunteering and working on her toy collection.
-              <!--CHANGE VALUE IN FILE script.js-->
-              <p class="skills-line" id="line-1"><span>Frontend Development</span></p>
-              <p class="skills-line" id="line-2"><span>Ux Design</span></p>
-              <p class="skills-line" id="line-3"><span>Agile Project Management</span></p>
-              <p class="skills-line" id="line-4"><span>DevOps</span></p>
 
-            </div>
-          </div>
-        </div>
-        <div id="content1">
-            <div id="resume">
-              <div class="headlines" id="headlines-resume">WORK</div>
-              <div id="resume-box">
-                <div class="selection-resume">
-                <div class="icons"><i class="fa fa-code"></i></div>
-                <p class="company">GSA, Digital Service</p>
-                <p class="position">Sr. Developer</p>
-                <p class="description"></p>
-                </div>
-                <div class="selection-resume">
-                <div class="icons"><i class="fa fa-code"></i></div>
-                <div class="year">2017-Now</div>
-                <p class="company">Thinkful</p>
-                <p class="position">Bootcamp Mentor</p>
-                <p class="description">HTML/CSS/JavaScript/JQuery/UX</p>
-                </div>
-                <div class="selection-resume">
-                <div class="icons"><i class="fa fa-asterisk"></i></div>
-                <div class="year">2011 - 2017</div>
-                <p class="company">CSS-Tricks</p>
-                <p class="position">Operations Guru</p>
-                <p class="description last-description"> </p>
-                </div>
-                <div class="selection-resume">
-                <div class="icons"><i class="fa fa-users"></i></div>
-                <div class="year">2015 - 2016 </div>
-                <p class="company">White House OSTP</p>
-                <p class="position">Developer</p>
-                <p class="description">Lead developer for the Federal Open Innovations Toolkit</p>
-                </div>
-                <div class="selection-resume last-selection">
-                <div class="icons"><i class="fa fa-flag"></i></div>
-                <div class="year">2002 - 2015</div>
-                <p class="company">U.S. Dept. of Veterans Affairs</p>
-                <p class="position">Various roles</p>
-                <p class="description">Served as a Sr. PM and developer</p>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div id="content2">
-              <div id="work">
-              <div class="headlines" id="headlines-portfolio">ALSO</p>
-              </div>
-              <div id='gallery'>
-                <ul class="ch-grid" id='Grid'>
-        					<li class="mix photoghraphy">
-                    <a class="test-popup-link" href="images/Logo3.jpg">
-          						<div class="ch-item ch-img-2">
-          							<div class="ch-info">
-          								<h3>GDI Dayton</h3>
-          								<p>Co-founder, chapter leader</p>
-          							</div>
-          						</div>
-                    </a>
-        					</li>
-                </ul>
-              </div>
-              </div>
-        </div>
-        <div id="content3">
-            <div id="contact">
-              <div class="headlines" id="headlines-contact">GET<p>IN</p><p>TOUCH</p>
-              </div>
-              <div id="resume-box">
-                <!-- CONTACT-->
+ <svg width="0" height="0" viewBox="0 0 216 216">
+	<path id="twitter" d="M214.6,0H1.4C0.6,0,0,0.6,0,1.4v213.1c0,0.8,0.6,1.4,1.4,1.4h213.1c0.8,0,1.4-0.6,1.4-1.4V1.4
+		C216,0.6,215.4,0,214.6,0z M181,70.6c0.1,1.6,0.1,3.2,0.1,4.9c0,49.8-37.9,107.2-107.2,107.2c-21.3,0-41.1-6.2-57.7-16.9
+		c2.9,0.3,5.9,0.5,9,0.5c17.6,0,33.9-6,46.8-16.1c-16.5-0.3-30.4-11.2-35.2-26.2c2.3,0.4,4.7,0.7,7.1,0.7c3.4,0,6.8-0.5,9.9-1.3
+		c-17.2-3.5-30.2-18.7-30.2-36.9c0-0.2,0-0.3,0-0.5c5.1,2.8,10.9,4.5,17.1,4.7c-10.1-6.8-16.8-18.3-16.8-31.4
+		c0-6.9,1.9-13.4,5.1-18.9c18.6,22.8,46.3,37.8,77.6,39.4c-0.6-2.8-1-5.6-1-8.6c0-20.8,16.9-37.7,37.7-37.7
+		c10.8,0,20.6,4.6,27.5,11.9c8.6-1.7,16.6-4.8,23.9-9.1c-2.8,8.8-8.8,16.2-16.6,20.8c7.6-0.9,14.9-2.9,21.6-5.9
+		C194.8,58.6,188.4,65.2,181,70.6z"/>
+	<g id="codepen">
+		<polygon class="inner" points="38.3,136 100.1,177.2 100.1,140.4 65.9,117.5 "/>
+		<polygon points="177.7,80 115.9,38.8 115.9,75.6 150.1,98.5 "/>
+		<polygon points="32,94.8 32,121.2 51.7,108 "/>
+		<polygon points="108,89.3 80.1,108 108,126.7 135.9,108 "/>
+		<polygon points="100.1,75.6 100.1,38.8 38.3,80 65.9,98.5 "/>
+		<path d="M214.6,0H1.4C0.6,0,0,0.6,0,1.4v213.1c0,0.8,0.6,1.4,1.4,1.4h213.1c0.8,0,1.4-0.6,1.4-1.4V1.4C216,0.6,215.4,0,214.6,0z
+			 M199.8,136c0,0.3,0,0.7-0.1,1c0,0.1,0,0.2-0.1,0.3c0,0.2-0.1,0.4-0.1,0.7c0,0.1-0.1,0.3-0.1,0.4c-0.1,0.2-0.1,0.4-0.2,0.6
+			c-0.1,0.1-0.1,0.3-0.2,0.4c-0.1,0.2-0.2,0.4-0.3,0.5c-0.1,0.1-0.1,0.2-0.2,0.4c-0.1,0.2-0.2,0.3-0.3,0.5c-0.1,0.1-0.2,0.2-0.3,0.3
+			c-0.1,0.1-0.3,0.3-0.4,0.4c-0.1,0.1-0.2,0.2-0.3,0.3c-0.1,0.1-0.3,0.3-0.4,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c0,0-0.1,0.1-0.1,0.1
+			l-83.9,55.9c-1.3,0.9-2.9,1.3-4.4,1.3c-1.5,0-3.1-0.4-4.4-1.3l-83.9-55.9c0,0-0.1-0.1-0.1-0.1c-0.1-0.1-0.2-0.2-0.4-0.3
+			c-0.2-0.1-0.3-0.2-0.4-0.4c-0.1-0.1-0.2-0.2-0.3-0.3c-0.1-0.1-0.3-0.3-0.4-0.4c-0.1-0.1-0.2-0.2-0.3-0.3c-0.1-0.2-0.2-0.3-0.3-0.5
+			c-0.1-0.1-0.2-0.2-0.2-0.4c-0.1-0.2-0.2-0.3-0.3-0.5c-0.1-0.1-0.1-0.3-0.2-0.4c-0.1-0.2-0.1-0.4-0.2-0.6c0-0.1-0.1-0.3-0.1-0.4
+			c-0.1-0.2-0.1-0.4-0.1-0.7c0-0.1,0-0.2-0.1-0.3c0-0.3-0.1-0.7-0.1-1V80c0-0.3,0-0.7,0.1-1c0-0.1,0-0.2,0.1-0.3
+			c0-0.2,0.1-0.4,0.1-0.7c0-0.1,0.1-0.3,0.1-0.4c0.1-0.2,0.1-0.4,0.2-0.6c0.1-0.1,0.1-0.3,0.2-0.4c0.1-0.2,0.2-0.4,0.3-0.5
+			c0.1-0.1,0.1-0.2,0.2-0.4c0.1-0.2,0.2-0.3,0.3-0.5c0.1-0.1,0.2-0.2,0.3-0.3c0.1-0.1,0.3-0.3,0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3
+			c0.1-0.1,0.3-0.3,0.4-0.4c0.1-0.1,0.2-0.2,0.4-0.3c0,0,0.1-0.1,0.1-0.1l83.9-55.9c2.7-1.8,6.1-1.8,8.8,0l83.9,55.9
+			c0,0,0.1,0.1,0.1,0.1c0.1,0.1,0.2,0.2,0.4,0.3c0.2,0.1,0.3,0.2,0.4,0.4c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0.1,0.3,0.3,0.4,0.4
+			c0.1,0.1,0.2,0.2,0.3,0.3c0.1,0.2,0.2,0.3,0.3,0.5c0.1,0.1,0.2,0.2,0.2,0.4c0.1,0.2,0.2,0.3,0.3,0.5c0.1,0.1,0.1,0.3,0.2,0.4
+			c0.1,0.2,0.1,0.4,0.2,0.6c0,0.1,0.1,0.3,0.1,0.4c0.1,0.2,0.1,0.4,0.1,0.7c0,0.1,0,0.2,0.1,0.3c0,0.3,0.1,0.7,0.1,1V136z"/>
+		<polygon points="115.9,140.4 115.9,177.2 177.7,136 150.1,117.5 	"/>
+		<polygon points="184,121.2 184,94.8 164.3,108 	"/>
+	</g>
+	<path id="linkedin" d="M214.6,0H1.4C0.6,0,0,0.6,0,1.4v213.1c0,0.8,0.6,1.4,1.4,1.4h213.1c0.8,0,1.4-0.6,1.4-1.4V1.4
+		C216,0.6,215.4,0,214.6,0z M65.3,185.2H33.3V82.1h32.1V185.2z M49.3,68C39,68,30.7,59.7,30.7,49.4c0-10.2,8.3-18.6,18.6-18.6
+		c10.2,0,18.6,8.3,18.6,18.6C67.8,59.7,59.5,68,49.3,68z M185.3,185.2h-32V135c0-12-0.2-27.3-16.7-27.3c-16.7,0-19.2,13-19.2,26.5v51
+		h-32V82.1h30.7v14.1h0.4c4.3-8.1,14.7-16.6,30.3-16.6c32.4,0,38.4,21.3,38.4,49.1V185.2z"/>
+	<path id="github" d="M214.6,0H1.4C0.6,0,0,0.6,0,1.4v213.1c0,0.8,0.6,1.4,1.4,1.4h213.1c0.8,0,1.4-0.6,1.4-1.4V1.4
+		C216,0.6,215.4,0,214.6,0z M135.3,198.2v-21.6c0-10.7-4.6-16.4-8.9-19.3c24.1-2.6,50-11.2,50-52.9c0-11.7-4.1-21.3-11.1-28.7
+		c1.2-2.8,4.8-13.6-1.1-28.4c0,0-8.9-2.9-29.3,11c-8.6-2.3-17.8-3.5-26.8-3.6c-9.1,0.1-18.3,1.3-26.8,3.6c-20.4-13.8-29.4-11-29.4-11
+		C46,62,49.7,72.8,50.8,75.6c-6.8,7.4-10.9,17-10.9,28.7c0,41.8,25.8,50.5,50,53c-1.7,0.5-6.9,1.9-8.3,8.6
+		c-4.6,2.2-19.3,7.8-28.3-7.5c0,0-5-9-14.5-9.7c0,0-9.2-0.1-0.6,5.7c0,0,6.2,2.9,10.4,13.8c0,0,5.6,18.6,32.4,12.5v17.3
+		c-37.5-12.2-64.7-47.2-64.7-88.5c0-50.7,41.1-91.8,91.7-91.8c50.7,0,91.9,41.1,91.9,91.8C199.8,150.9,172.7,185.8,135.3,198.2z"/>
+</svg>
+  </section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
-                <p style="font-size:18px;">I'm not currently taking freelance work or entertaining recruiters. Feel free to contact me with funny jokes.</p>
+  <script src="js/index.js"></script>
 
-
-                  <!-- PHONE NUMBER
-                  <p>123 456 789 <i class="fa fa-phone"></i></p> -->
-                  <!-- EMAIL-->
-                  <p>contact@sara.io <i class="fa fa-envelope "></i></p>
-                  <!-- ADDRESS-->
-                  <p>Dayton, OH. USA <i class="fa fa-map-marker"></i></p>
-                </div>
-
-
-
-                <!--
-                <div id='contact-form'>
-                <form id="contactform" method="post" name="contactform" action="http://formspree.io/steph.green44@gmail.com">
-                <p>
-                <input class='input' type='text' name='name' class='input' placeholder='Your name'>
-                </p>
-                <p>
-                <input class='input' type='email' name='_replyto' class='input' placeholder='Your e-mail'>
-                </p>
-                <p>
-                <textarea name="body" cols="88" rows="6" class="textarea" placeholder='Your message'></textarea>
-                </p>
-                <p id='p-submit'>
-                <input id="submit"  type="submit" name="submit" value="Send your message" class="button">
-                </p>
-                </form>
-                <div id="success"></div>
-                </form>
-                </div>
-              </div>
-              -->
-            </div>
-        </div>
-        <div id="content4">
-          <div id="socila-complet">
-            <a href="https://twitter.com/sarassasin"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/saracope"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/saracope"><i class="fa fa-github"></i></a>
-          </div>
-        </div>
-    </div> <!-- end main -->
-    <p id="back-top">
-		<a href="#top"><span><i class="fa fa-arrow-up"></i></span></a>
-	  </p>
-
-    <script language="javascript">
-        function autoResizeDiv()
-        {
-            document.getElementById('header').style.height = window.innerHeight +'px';
-        }
-        window.onresize = autoResizeDiv;
-        autoResizeDiv();
-    </script>
-
-    <script type="text/javascript">
-    $(function(){
-
-    $('#Grid').mixitup();
-
-    });
-    </script>
-    <script type="text/javascript">
-            $(document).ready(function() {
-            $('.test-popup-link').magnificPopup({type:'image', gallery:{enabled:true}});
-            });
-  </script>
-  <script type="text/javascript">
-        $(window).load(function() {
-            $('#status').fadeOut();
-            $('#preloader').delay(350).fadeOut('slow');
-            $('body').delay(350).css({'overflow':'visible'});
-        })
-</script>
 </body>
 </html>
