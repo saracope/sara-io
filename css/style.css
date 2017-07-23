@@ -1,6 +1,5 @@
 *, *:before, *:after {
   -webkit-box-sizing: border-box; 
-  -moz-box-sizing: border-box; 
   box-sizing: border-box;
 }
 
@@ -8,12 +7,15 @@ html, body {
   margin: 0;
   height: 100%;
   font-family: 'Muli', sans-serif;
+  font-size: 100%;
   background: #222;
 }
 
 h1 {
-  margin-bottom: 30px;
-  font-size: 18vmin;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  font-size: 16vmin;
   text-align: center;
   text-shadow: 0 0 18px #a8a8a8;
   color: white;
@@ -29,13 +31,6 @@ h2 {
   color: white;
 }
 
-.main {
-  position: absolute;
-   top: 10%; 
-   left: 0; 
-   width: 100%;
-}
-
 .galaxy-wrapper {
   position: relative;
   background-image: url(https://images-assets.nasa.gov/image/PIA08093/PIA08093~orig.jpg);
@@ -46,38 +41,67 @@ h2 {
   overflow: hidden;
 }
 
+.main {
+  position: absolute;
+  top: 5%; 
+  left: 0; 
+  width: 100%;
+}
+
 .social--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  max-width: 6em;
-  margin: 20px auto 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 20vmin;
+  margin: 10px auto 0;
   cursor: pointer;
 }
 
 .icon {
   margin: auto;
-  width: 2em;
-  height: 2em;
+  width: 100%;
   padding: 8px;
   fill: rgba(255, 255, 255, .1);
   stroke: #fff;
   stroke-width: 5px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 
 .icon:hover, .icon:focus {
   fill: rgba(255, 255, 255, .9);
+  -webkit-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
   transition: all 0.15s ease;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
+
+  h1 {
+    margin-bottom: 30px;
+  }
+  .main {
+    top: 10%;
+  }
+
   .social--list {
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50vmin;
+    margin: 20px auto 0;
   }
-  .icon {
-    width: 1em;
-    height: 1em;
-  }
+
 }
